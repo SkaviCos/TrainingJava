@@ -12,4 +12,10 @@ public class Rectangle {
         this.n = n;
 
     }
+
+
+    public  double area(){
+        return this.m * this.n;
+    }
 }
+
