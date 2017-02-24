@@ -15,7 +15,7 @@ public class Main {
 
     Point p = new Point(3, 6);
 
-    System.out.println("Расстояние между двумя точками " + p.p1 + " и " + p.p2 + " = " + Math.sqrt(p.length()));
+    System.out.println("Расстояние между двумя точками " + p.p1 + " и " + p.p2 + " = " + Math.sqrt(p.distance()));
 
   }
 }

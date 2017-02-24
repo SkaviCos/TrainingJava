@@ -13,7 +13,7 @@ public class Point {
     }
 
 
-    public double length(){
+    public double distance(){
 
 
         return (this.p1 * this.p1) + (this.p2 * this.p2);
