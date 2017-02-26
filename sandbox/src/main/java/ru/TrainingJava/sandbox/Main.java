@@ -13,9 +13,9 @@ public class Main {
     System.out.println("Площадь прямоугольника со сторонами " + r.m + " и " + r.n + " = " + r.area());
 
 
-    Point p = new Point(3, 6);
+   // Point p = new Point(3, 6);
 
-    System.out.println("Расстояние между двумя точками " + p.p1 + " и " + p.p2 + " = " + Math.sqrt(p.distance()));
+    //System.out.println("Расстояние между двумя точками " + p.p1 + " и " + p.p2 + " = " + Math.sqrt(p.distance()));
 
   }
 }
