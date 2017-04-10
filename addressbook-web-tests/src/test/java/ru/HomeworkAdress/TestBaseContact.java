@@ -71,7 +71,7 @@ public class TestBaseContact {
     }
 
     protected void selectContact() {
-        wd.findElement(By.id("2")).click();
+        wd.findElement(By.name("selected[]")).click();
     }
 
 
