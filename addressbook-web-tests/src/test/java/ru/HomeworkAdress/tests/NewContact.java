@@ -40,7 +40,7 @@ public class NewContact {
     }
 
     private void returnToContactPage() {
-        wd.findElement(By.xpath("//div/div[3]/ul/li[2]/a")).click();
+        wd.findElement(By.linkText("home")).click();
     }
 
     private void submitContact() {
