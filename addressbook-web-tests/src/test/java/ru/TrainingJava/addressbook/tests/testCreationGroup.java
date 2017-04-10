@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import ru.TrainingJava.addressbook.model.GroupData;
 
 
-public class FirstSeleniumTest extends TestBase {
+public class testCreationGroup extends TestBase {
 
     @Test
     public void testFirstSeleniumTest() {
