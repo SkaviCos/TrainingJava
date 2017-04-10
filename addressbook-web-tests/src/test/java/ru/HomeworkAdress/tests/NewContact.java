@@ -1,4 +1,4 @@
-package ru.HomeworkAdress;
+package ru.HomeworkAdress.tests;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
@@ -21,16 +21,18 @@ public class NewContact {
     public void setUp() throws Exception {
         wd = new FirefoxDriver();
         wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+        wd.get("http://localhost/addressbook/");
+        wd.findElement(By.name("pass")).click();
+        wd.findElement(By.name("pass")).clear();
+        wd.findElement(By.name("pass")).sendKeys("secret");
+        wd.findElement(By.name("user")).click();
+        wd.findElement(By.name("user")).clear();
+        wd.findElement(By.name("user")).sendKeys("admin");
+        wd.findElement(By.xpath("//form[@id='LoginForm']/input[3]")).click();
     }
     
     @Test
     public void testNewContact() {
-        wd.get("http://localhost/addressbook/");
-        wd.findElement(By.name("pass")).click();
-        wd.findElement(By.name("pass")).sendKeys("secret");
-        wd.findElement(By.name("user")).click();
-        wd.findElement(By.name("user")).sendKeys("admin");
-        wd.findElement(By.xpath("//form[@id='LoginForm']/input[3]")).click();
         wd.findElement(By.linkText("add new")).click();
         wd.findElement(By.name("firstname")).click();
         wd.findElement(By.name("firstname")).sendKeys("Test1");
