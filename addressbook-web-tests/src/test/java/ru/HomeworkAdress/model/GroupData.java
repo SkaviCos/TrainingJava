@@ -1,4 +1,4 @@
-package ru.HomeworkAdress;
+package ru.HomeworkAdress.model;
 
 public class GroupData {
     private final String name;
