@@ -1,6 +1,6 @@
 package ru.HomeworkAdress.tests;
 
-import org.testng.annotations.Test;
+/*import org.testng.annotations.Test;
 
 public class DeleteGroup extends TestBaseGroup {
 
@@ -12,3 +12,4 @@ public class DeleteGroup extends TestBaseGroup {
         app.returnToGroupPage();
     }
 }
+*/

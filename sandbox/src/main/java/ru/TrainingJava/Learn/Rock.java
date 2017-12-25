@@ -13,11 +13,12 @@ class Rock {
 
 class SimpleConstructor {
     public static void main(String[] args) {
-        for (int i = 0; i < 10; i++) {
-            new Rock();
+        //for (int i = 0; i < 10; i++) {
+          //  new Rock();
+        System.out.println(Math.abs(-233));
         }
     }
-}
+//}
 class Bird{}
 class DefConscrt{
     public static void main (String[] args){

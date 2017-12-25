@@ -26,11 +26,11 @@ public class TestBaseContact {
     public void setUp() throws Exception {
         wd = new FirefoxDriver();
         wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-        wd.get("http://localhost/addressbook/");
-        login("secret", "admin");
+        wd.get("http://localhost/addressbook/addressbook");
+        login("admin", "secret");
     }
 
-    private void login(String password, String username) {
+    private void login(String username, String password) {
         wd.findElement(By.name("pass")).click();
         wd.findElement(By.name("pass")).clear();
         wd.findElement(By.name("pass")).sendKeys(password);
