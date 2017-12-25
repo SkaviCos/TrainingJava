@@ -2,7 +2,7 @@ package ru.TrainingJava.Homework;
 
 
 public class HomeworkMain {
-    public static void main(String[] args) {
+    public void main(String[] args) {
 
         Point p1 = new Point(5, 8);
         Point p2 = new Point(12, 9);
